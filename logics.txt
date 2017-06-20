@@ -1,0 +1,50 @@
+                                         Logical building and effective problem solvingyy
+
+
+
+
+Question 1) you have been given the list of indian citizens which contain ID, Name, Gender, Age, qualification, City, State, Country,
+Salery, working status, Marital status, Employment status.
+
+Analysis to be done:-
+
+ A) Write the logic to check total male and female
+
+ Ans- * Start
+      * Start taking the details of indian citizens
+      * check the gender of each citizen
+      * If male add it to male 
+      * If female add it to female 
+      * Analysis the both gender and show the output
+      * Stop
+
+  B)  Write the logic to check how many citizens are graduate
+
+ Ans- *Start
+      *Start taking the details of indian citizens
+      *check the qualification of each citizen 
+      *if they are completed Graduate 
+      *count the number of citizens completed graduates  
+      *Show the output
+      *stop
+
+  C)  Check howmany citizens having income more than 1 lac permonth
+
+  Ans- *Start
+       *Start taking the details of indian citizens
+       *check the salery of each person 
+       *If it is above 1 or equl to 1 lac 
+       *Count the number of persons who having above or equal to 1 lac
+       *Show the output
+       *Stop
+
+  D) check how many of them are married singe widow
+  
+  
+  Ans- *Start
+       *Start taking the details of indian citizens
+       *check who are married and count the number
+       *check who are single and count the number
+       *check who are widow and count the number
+       *Analys the details and show the output
+       *Stop
