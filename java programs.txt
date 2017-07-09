@@ -1,0 +1,466 @@
+                                         Logical building and effective problem solving
+
+                                                                                                                Github:    https://github.com/sairamsri60/logics
+                                                                                                                SRI SAIRAM.S From T.nagar Student id(S181165200124)
+
+                                                                                                                
+
+
+Question 1) you have been given the list of indian citizens which contain ID, Name, Gender, Age, qualification, City, State, Country,
+Salery, working status, Marital status, Employment status.
+
+Analysis to be done:-
+
+ A) Write the logic to check total male and female
+
+ Ans- * Start
+      * Start taking the details of indian citizens
+      * check the gender of each citizen
+      * If male add it to male 
+      * If female add it to female 
+      * Analysis the both gender and show the output
+      * Stop
+
+  B)  Write the logic to check how many citizens are graduate
+
+ Ans- *Start
+      *Start taking the details of indian citizens
+      *check the qualification of each citizen 
+      *if they are completed Graduate 
+      *count the number of citizens completed graduates  
+      *Show the output
+      *stop
+
+  C)  Check howmany citizens having income more than 1 lac permonth
+
+  Ans- *Start
+       *Start taking the details of indian citizens
+       *check the salery of each person 
+       *If it is above 1 or equl to 1 lac 
+       *Count the number of persons who having above or equal to 1 lac
+       *Show the output
+       *Stop
+
+  D) check how many of them are married singe widow
+  
+  
+  Ans- *Start
+       *Start taking the details of indian citizens
+       *check who are married and count the number
+       *check who are single and count the number
+       *check who are widow and count the number
+       *Analys the details and show the output
+       *Stop
+
+
+                                                                          JAVA PROGRAMS
+
+
+
+
+1] Write a program to accept 3 numbers and display highest numbers using condition only?
+ 
+import.java.util.Scanner;
+
+public class Greatestnumber
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in)
+int a,b,c;
+System.out.println("enter the number 1");
+a=sc.nextInt();
+System.out.println("enter the number 2");
+b=sc.nextInt();
+System.out.println("enter the number 3");
+c=sc.nextInt();
+if(a>b&&a>c)
+System.out.println("a is the biggest number"+a);
+else if(b>c)
+System.out.println("b is the biggest number"+b);
+else
+System.out.println("c is the biggest number"+c);
+}}
+
+
+2] Write a program to accept a string and check wheather 3rd character of string is "s" or not without using a readymade atring functions?
+
+package find;
+import java.util.Scanner;
+public class Find {
+	public static void main(String args[])
+	{  
+		 Scanner i =new Scanner(System.in); 
+		 System.out.println("enter the string");
+		String find =i.next();
+		
+		
+		char[] chars = find.toCharArray();
+		
+		if(chars[2] == 's'){
+			System.out.println("True");
+		} else{
+			System.out.println("False");
+		}
+		
+	}
+
+}
+
+
+3] write a program to accept a string and replace third character with "T" without using readymade functions?
+
+
+public class Modify {
+	public static void main(String[] args) {
+		 String Str=new String("enter the characters");
+
+	      System.out.println(Str.modify('e','T'));
+
+	}
+
+}
+
+4] Student details to above 21 age count&similar city student name &count are display?
+
+package timepass;
+
+import java.util.Scanner;
+
+public class Analysis {
+	 public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+int max=0;int no=0;
+for(int i=1;i<=3;i++){
+System.out.println("enter the Id");
+String id=sc.next();
+
+System.out.println("enter the name");
+String name=sc.next();
+
+
+System.out.println("enter the age");
+int age=sc.nextInt();
+
+	System.out.println("city");
+	String city=sc.next();
+
+	System.out.println("enter the country");
+	String country=sc.next();
+
+	System.out.println("enter the student no");
+	int sno=sc.nextInt();
+	System.out.println("Id   :"+id+"     name:   "+name+"     age   :"+age+"     city:    "+city+"     country:    "+country+"   studentno    "+studentno);
+
+if(age>=21){
+	no=no+1;
+	System.out.println( "age above 21 :   "+name+"      above 21 age count  :"+no);
+}
+	else if(city.equals("chennai")){
+	max=max+1;
+	System.out.println("no of chennai:     "+max  +"  name:    "+ name);
+}
+	else if(city.equals("delhi")){
+	max=max+1;
+	System.out.println("no of delhi:   "+max  +"     name:   "+ name);
+	}
+	else{
+		
+	}
+}
+}
+	 }
+
+
+5]  write a program to accept 10 numbers and display the total number of count greater than 10?
+import java.util.Scanner;
+public class Count {
+	static Scanner c = new Scanner(System.in);
+	public static void main (String a[]){
+		int no;
+		int max=0;
+
+		{
+			System.out.println("enter the no");
+			no=c.nextInt();
+			max=0;
+			if(no>=10)
+			{
+				max=max+1;
+				System.out.println(max);
+			}
+		}
+	}
+
+}
+
+6] Employ details and maximum & minimum salary calculated ?
+package timepass;
+
+import java.util.Scanner;
+
+public class Employ {
+	public static void main(String[] args) {
+		
+for(int i=0;i<=2;i++){
+	int no=0;
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter the employ name:");
+String employname=sc.next();
+System.out.println("Enter the employ id:");
+String employid=sc.next();
+System.out.println("Enter the age:");
+int  eage=sc.nextInt();
+System.out.println("Enter the employ Salary:");
+int employsalary=sc.nextInt();
+System.out.println("Enter the employ department:");
+String employdepartment=sc.next();
+System.out.println("name:"+     employname+"id:"+     employid+"salary:"+    employsalary);
+if (no<employsalary){
+	no=employsalary+no;
+
+	System.out.println( "max salary"+employsalary+"name"+employname);
+}else if(no>employsalary){
+   no=employsalary-no}
+
+7]  MOVIE Name , movie actor details and Directors? 
+package timepass;
+
+import java.util.Scanner;
+
+public class Filim {
+	public static void main(String[] args) {
+		int count=0;int amount=0; int no=0;int v=0;int r=0;int h=0;int o=0;
+
+		for(int i=0;i<2;i++){
+
+Scanner sc=new Scanner(System.in);
+System.out.println("enter the movie id");
+String movieid=sc.next();
+System.out.println("enter the movie name");
+String moviename=sc.next();
+System.out.println("enter the actor name");
+String actorname=sc.next();
+System.out.println("enter the director name");
+String director=sc.next();
+System.out.println("enter the year of release");
+String dateofrelease=sc.next();
+System.out.println("enter the language");
+String language=sc.next();
+System.out.println("enter the income");
+int income=sc.nextInt();
+System.out.println("enter the rating");
+int  rating=sc.nextInt();
+System.out.println("enter the duration");
+String duration =sc.next();
+{
+	System.out.println(movieid         +moviename       +rating       );
+	count++;
+	System.out.println("1.movie release count:"+count);
+}
+amount=income+amount;
+System.out.println("2.total income:"+amount);
+if(rating>=4){
+	no++;
+	System.out.println("3.rating:"+rating     +"moviename"+moviename+"count"+no);
+	
+}
+if(language.equals("tamil")){
+	v++;
+	System.out.println("4.tamil movie"+moviename+"count"+v);
+}
+if(language.equals("english")){
+	r++;
+	System.out.println("4.english movie"+moviename+"count"+r);
+}
+if(language.equals("hindi")){
+	h++;
+	System.out.println("4.hindi movie"+moviename+"count"+h);
+}
+if(director.equals("JOHN D")){
+	o++;
+	System.out.println("5.director sai"+moviename+"count"+o);
+}
+
+
+
+8] Write a program to accept 3 numbers and display highest numbers using condition only?
+ 
+import.java.util.Scanner;
+
+public class Greatestnumber
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in)
+int a,b,c;
+System.out.println("enter the number 1");
+a=sc.nextInt();
+System.out.println("enter the number 2");
+b=sc.nextInt();
+System.out.println("enter the number 3");
+c=sc.nextInt();
+if(a>b&&a>c)
+System.out.println("a is the biggest number"+a);
+else if(b>c)
+System.out.println("b is the biggest number"+b);
+else
+System.out.println("c is the biggest number"+c);
+}}
+
+
+9] Write a program to accept a string and check wheather 3rd character of string is "s" or not without using a readymade atring functions?
+
+package find;
+import java.util.Scanner;
+public class Find {
+	public static void main(String args[])
+	{  
+		 Scanner i =new Scanner(System.in); 
+		 System.out.println("enter the string");
+		String find =i.next();
+		
+		
+		char[] chars = find.toCharArray();
+		
+		if(chars[2] == 's'){
+			System.out.println("True");
+		} else{
+			System.out.println("False");
+		}
+		
+	}
+
+}
+
+
+10] write a program to accept a string and replace third character with "T" without using readymade functions?
+
+
+public class Modify {
+	public static void main(String[] args) {
+		 String name;
+
+	      System.out.println("enter the string");
+              Scanner sin=new Scanner(System.in);
+              name=sin.next();
+              char ch[]=name.toChatArray();
+              ch[3]='t';
+              int count=name.length();
+              for(int i=0;i<count;i++){
+               System.out.println(ch[i]);
+
+	}
+
+}
+
+11]   Addition Subtraction Multiply Division operation
+
+
+import java.util.Scanner;
+
+public class Operation {
+	Scanner n=new Scanner(System.in);
+	
+
+
+void calculation(){
+	System.out.println("Enter the no 1:");
+	int a=n.nextInt();
+	System.out.println("Enter the no 2:");
+	int b=n.nextInt();
+	int c;
+	c=a+b;
+	System.out.println("addition of  no:              "+c);
+	c=a-b;
+	System.out.println("subraction of no:             "+c);
+    c=a*b;
+    System.out.println("multiply  of no:              "+c);
+    c=a/b;
+    System.out.println("div of no                     "+c );
+    c=(a+b)/2;
+    System.out.println("per of no                     "+c);
+}
+
+	public static void main(String[] args) {
+Operation s=new Operation();
+s.calculation();
+	}
+
+}
+
+
+
+12]  Reverse number print?
+
+
+public class Array {
+	public static void main(String[] args) {
+int a[]=new int[5];
+a[0]=23;
+a[1]=34;
+a[2]=4;
+a[3]=34;
+a[4]=467;
+for(int i=0;i<a.length;i++)
+	System.out.print(a[i]);
+for(int j=a.length-1;j>=0;j--)
+	System.out.print(a[j]);
+	
+}
+}
+
+
+
+13] SALERY details and bonus add to salary
+
+
+import java.util.Scanner;
+
+public class Salary {
+int amount=0;
+	public static void main(String[] args) {
+		for(int i=0;i<=2;i++){
+
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter the name:");
+String  name=sc.next();
+System.out.println("Enter the  previous salary:");
+int salary=sc.nextInt();
+if(salary==10000){
+	 int  amount=(salary+3000);
+	 System.out.println( "name:"+name        +" this month salary:"+amount);
+}
+else if(salary==50000){
+	 int  amount=(salary+10000);
+	 System.out.println( "name:"+name        +"this month salary:"+amount);
+}
+else if(salary==100000){
+	 int  amount=(salary+10000);
+	 System.out.println( "name:"+name        +"this month salary:"+amount);
+}
+else{
+	System.out.println("success");
+}
+
+
+	}
+
+}
+}
+
+
+14] Write a program to accept a string and display the last character of the string without using ready made string functions?
+
+public static void main(String [] args)
+{
+String name;
+int count;
+System.out.println("enter the string");
+Scanner sin =new Scanner (System.in)
+name=sin.next();
+chat ch[]=name.toCharArray();
+count=name.length();
+System.out.println("The last character is "+ name.charAt(count-1));
+
+}
