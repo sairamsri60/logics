@@ -1,0 +1,41 @@
+package handli;
+
+import java.util.Scanner;
+class NoException extends Exception
+{
+	NoException()
+	{
+		System.out.println("\n invalid");
+	}
+}
+
+public class Ry 
+{
+	public static void main(String aa[])
+	{
+		int no;
+		Scanner sc=new Scanner(System.in);
+		for(int i=0;i<10;i++)
+		{
+		System.out.println("Ënter the number");
+		no=sc.nextInt();
+		if (no>10)
+		{
+			try
+			{
+				throw new NoException();
+			}
+			catch (NoException e)
+			{
+				System.out.println("Exception raised");
+				break;
+			}
+		}
+			else
+			{
+				System.out.println("valid");
+			}
+		}
+	}
+}
+
